@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
-    <script src="getform.js"></script>
-    <script src="tasknumber.js"></script>
-    <script src="addtask.js"></script>
+    <script src="scripts/addtask.js"></script>
+    <script src="scripts/tasknumber.js"></script>
+    <script src="scripts/getform.js"></script>
 
 </head>
 
@@ -22,20 +22,21 @@
     <form action="" id="form" class="tw-flex tw-justify-center tw-items-center tw-center tw-text-center tw-gap-8">
         <input type="text" id="text"
             class="tw-border tw-bottom-5 tw-relative tw-text-sm tw-rounded-lg tw-block tw-w-2/5 tw-p-2.5 tw-bg-task tw-border-header tw-placeholder-gray-400 tw-text-white tw-transition tw-duration-500  hover:-tw-translate-y-1 tw-ease-in-out hover:tw-bg-indigo-800 hover:tw-border-indigo-950"
-            placeholder="John" required>
+            placeholder="Adicione uma nova tarefa" required>
         <button action="submit" id="create"
             class="tw-bottom-5 tw-relative tw-text-white tw-p-2.5 tw-border-header tw-pl-3 tw-pr-3 tw-bg-blue-500 tw-rounded-lg tw-transition tw-duration-500 hover:-tw-translate-y-1 hover:tw-bg-indigo-800 hover:tw-border-indigo-900">Create</button>
     </form>
     <div class="tw-flex tw-justify-center tw-items-center tw-text-center tw-pb-4 ">
         <p class="tw-ml-7 tw-w-1/3 tw-text-blue-500 tw-font-bold tw-text-sm">Tarefas Criadas <span
-                class="tw-text-white tw-bg-task tw-pt-1 tw-pb-1 tw-mr-4 tw-pl-2 tw-pr-2 tw-rounded-full"
+                class="task_value tw-text-white tw-bg-task tw-pt-1 tw-pb-1 tw-mr-4 tw-pl-2 tw-pr-2 tw-rounded-full"
                 id="task_value">0</span></p>
         <p class="tw-w-1/3 tw-text-indigo-500 tw-font-bold tw-text-sm">Concluídas &nbsp;<span
-                class="tw-text-white tw-bg-task tw-pt-1 tw-pb-1 tw-mr-12 tw-pl-2 tw-pr-2 tw-rounded-full">2 de
-                <span id=""></span></span>
+                class="tw-text-white tw-bg-task tw-pt-1 tw-pb-1 tw-mr-12 tw-pl-2 tw-pr-2 tw-rounded-full"><span
+                    class="task_completed">0</span> de
+                <span class="task_value">0</span></span>
         </p>
     </div>
-    <div class="tw-flex tw-justify-center tw-items-center">
+    <div class=" tw-flex tw-justify-center tw-items-center">
         <ul id='task' class="tw-w-5/12">
 
         </ul>
